@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#153b35">
+<title>Welfares.site — Your community. Better supported.</title>
+<meta name="description" content="Create your own online welfare and cooperative management platform. Manage members, contributions, loans, assistance and reports in one place.">
+<style>
+:root{--ink:#172b28;--muted:#64736f;--green:#176b55;--green2:#0f4d3f;--lime:#d8f36a;--cream:#f7f8f2;--line:#e4eae4;--white:#fff;--shadow:0 22px 60px rgba(21,59,53,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.55}a{color:inherit;text-decoration:none}.container{width:min(1160px,calc(100% - 40px));margin:auto}
+header{height:78px;display:flex;align-items:center;border-bottom:1px solid rgba(228,234,228,.8);background:rgba(255,255,255,.92);position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}.nav{display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;font-size:1.25rem;letter-spacing:-.7px}.brand-mark{width:36px;height:36px;border-radius:12px;background:var(--green);display:grid;place-items:center;color:var(--lime);font-size:21px}.nav-links{display:flex;align-items:center;gap:30px;color:#50615c;font-size:.92rem}.nav-actions{display:flex;gap:12px;align-items:center}.btn{border:0;border-radius:12px;padding:12px 19px;font-weight:750;font-size:.92rem;display:inline-flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--green);color:white;box-shadow:0 8px 20px rgba(23,107,85,.18)}.btn-primary:hover{background:var(--green2)}.btn-light{background:#eff5ef;color:var(--green2)}.btn-outline{border:1px solid var(--line);background:white;color:var(--ink)}
+.hero{background:radial-gradient(circle at 80% 10%,#eaf4cf 0,transparent 31%),linear-gradient(135deg,#f8faf4 0%,#f1f7ed 100%);padding:82px 0 76px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:52px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--green);background:#e8f2df;border:1px solid #d9e9ca;border-radius:99px;padding:7px 12px;font-size:.78rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}.eyebrow i{width:7px;height:7px;background:#70a943;border-radius:50%}h1{font-size:clamp(2.7rem,5vw,4.7rem);line-height:1.04;letter-spacing:-.065em;margin:22px 0 20px;max-width:650px}h1 span{color:var(--green)}.hero-copy{font-size:1.12rem;color:#5c6b65;max-width:570px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin:30px 0 25px}.trust{display:flex;align-items:center;gap:12px;color:#718078;font-size:.85rem}.avatars{display:flex}.avatars span{width:27px;height:27px;border:2px solid #f6f8f2;border-radius:50%;margin-left:-7px;background:#d6e7c5;display:grid;place-items:center;font-size:10px;color:#315c43;font-weight:800}.avatars span:first-child{margin-left:0}.visual{position:relative;min-height:450px;display:flex;align-items:center;justify-content:center}.dashboard{width:100%;max-width:520px;background:white;border:1px solid #e4eae3;border-radius:20px;box-shadow:var(--shadow);padding:20px;transform:rotate(1deg);position:relative;z-index:1}.dash-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.dash-title{font-weight:800}.dash-sub{font-size:.75rem;color:#8a9690}.pill{font-size:.7rem;background:#e9f6e8;color:#34764d;padding:6px 10px;border-radius:30px;font-weight:800}.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.metric{padding:13px;background:#f7f9f5;border:1px solid #edf0e9;border-radius:12px}.metric small{display:block;color:#7a8780;font-size:.7rem}.metric strong{display:block;font-size:1.1rem;margin-top:4px;letter-spacing:-.5px}.chart{height:130px;margin:17px 0 13px;background:linear-gradient(180deg,#f4f9ed,#fff);border-radius:12px;padding:13px;position:relative;overflow:hidden}.chart-label{font-size:.72rem;color:#7b8981;font-weight:700}.bars{height:76px;display:flex;align-items:end;gap:12px;padding:8px 9px 0}.bars i{flex:1;border-radius:5px 5px 0 0;background:linear-gradient(180deg,#a9d66b,#3c8b65);height:var(--h)}.activity{display:flex;align-items:center;justify-content:space-between;padding:10px 2px;border-top:1px solid #eff1ec;font-size:.76rem}.activity b{font-size:.78rem}.activity span{color:#7d8983}.float-card{position:absolute;background:white;border:1px solid #e7ece4;box-shadow:0 16px 35px rgba(21,59,53,.12);border-radius:14px;padding:13px 16px;z-index:2}.float-one{left:-3%;top:12%;}.float-two{right:-3%;bottom:12%}.float-icon{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:9px;background:#edf7dd;margin-right:8px}.float-card strong{font-size:.85rem}.float-card small{display:block;color:#829087;font-size:.7rem;margin-left:39px}
+.section{padding:88px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 44px}.kicker{color:var(--green);font-size:.78rem;font-weight:850;text-transform:uppercase;letter-spacing:.1em}.section h2{font-size:clamp(2rem,3.4vw,3rem);letter-spacing:-.05em;line-height:1.12;margin:12px 0}.section-head p{color:var(--muted);font-size:1.03rem}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{padding:26px;border:1px solid var(--line);border-radius:17px;background:white;transition:.2s}.feature:hover{transform:translateY(-4px);box-shadow:0 15px 35px rgba(21,59,53,.07)}.feature-icon{width:44px;height:44px;display:grid;place-items:center;border-radius:13px;background:#edf5e7;font-size:21px;margin-bottom:19px}.feature h3{font-size:1.06rem;margin:0 0 8px}.feature p{margin:0;color:var(--muted);font-size:.91rem}
+.how{background:var(--cream)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.step{padding:25px 22px;border-radius:16px;background:white;border:1px solid var(--line)}.step-no{font-size:.78rem;font-weight:900;color:var(--green);background:#eaf4df;width:34px;height:34px;display:grid;place-items:center;border-radius:10px}.step h3{margin:18px 0 7px}.step p{margin:0;color:var(--muted);font-size:.91rem}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.split h2{font-size:clamp(2rem,3.4vw,3rem);letter-spacing:-.05em;line-height:1.12;margin:12px 0}.split p{color:var(--muted)}.checks{list-style:none;padding:0;margin:23px 0}.checks li{margin:12px 0;color:#41534b;display:flex;gap:10px;align-items:flex-start}.checks li:before{content:"✓";font-weight:900;color:var(--green);background:#eaf4df;width:22px;height:22px;flex:0 0 22px;display:grid;place-items:center;border-radius:50%;font-size:.8rem}.quote-panel{background:#163f35;color:white;padding:34px;border-radius:22px;position:relative;overflow:hidden}.quote-panel:after{content:"✳";position:absolute;right:15px;top:-45px;font-size:190px;color:rgba(216,243,106,.08)}.quote-panel blockquote{font-size:1.35rem;line-height:1.4;letter-spacing:-.02em;margin:0 0 28px;position:relative;z-index:1}.quote-panel .by{color:#c6d9ce;font-size:.85rem}.quote-panel .by strong{display:block;color:white}
+.cta{padding:0 0 88px}.cta-inner{background:var(--lime);border-radius:24px;padding:52px;display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{font-size:clamp(2rem,3.5vw,3rem);letter-spacing:-.055em;line-height:1.1;margin:0 0 10px;max-width:620px}.cta p{margin:0;color:#53633a}.cta .btn{background:#173f35;color:white;white-space:nowrap}
+footer{background:#102f29;color:#d9e6de;padding:44px 0 25px}.footer-top{display:flex;justify-content:space-between;gap:35px;align-items:flex-start;padding-bottom:35px}.footer-brand p{color:#a9bdb2;max-width:350px;font-size:.9rem}.footer-links{display:flex;gap:55px}.footer-links div{display:grid;gap:10px;font-size:.86rem;color:#b8c9bf}.footer-links strong{color:white;margin-bottom:4px}.footer-bottom{border-top:1px solid rgba(255,255,255,.13);padding-top:19px;display:flex;justify-content:space-between;color:#9bb1a5;font-size:.78rem}.footer-bottom a{color:#d9e6de}
+.modal-backdrop{display:none;position:fixed;inset:0;background:rgba(10,28,24,.62);z-index:30;padding:20px;align-items:center;justify-content:center}.modal-backdrop.open{display:flex}.modal{background:white;width:min(490px,100%);border-radius:20px;padding:28px;box-shadow:0 30px 80px rgba(0,0,0,.25);position:relative}.modal h2{margin:0 0 7px;letter-spacing:-.04em}.modal p{color:var(--muted);margin:0 0 20px;font-size:.9rem}.close{position:absolute;right:17px;top:15px;border:0;background:#f0f4ef;border-radius:9px;width:32px;height:32px;font-size:19px;cursor:pointer}.field{display:grid;gap:6px;margin:13px 0}.field label{font-size:.82rem;font-weight:750}.field input,.field select{width:100%;padding:12px 13px;border:1px solid #dce5dc;border-radius:10px;font:inherit;outline:none}.field input:focus,.field select:focus{border-color:var(--green);box-shadow:0 0 0 3px #e6f2e8}.modal .btn{width:100%;margin-top:10px}.form-note{font-size:.75rem!important;margin:12px 0 0!important;text-align:center}
+@media(max-width:850px){.nav-links{display:none}.hero-grid,.split{grid-template-columns:1fr}.hero{padding:60px 0}.visual{min-height:400px}.features{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.cta-inner{align-items:flex-start;flex-direction:column}.footer-top{flex-direction:column}.footer-links{flex-wrap:wrap}}
+@media(max-width:560px){.container{width:min(100% - 28px,1160px)}header{height:68px}.nav-actions .btn-light{display:none}.brand{font-size:1.1rem}.hero{padding:48px 0}.hero-grid{gap:25px}h1{font-size:2.8rem}.hero-copy{font-size:1rem}.visual{min-height:350px}.dashboard{padding:13px}.metric{padding:9px}.metric strong{font-size:.9rem}.float-one{left:-1%;top:0}.float-two{right:-1%;bottom:0}.section{padding:65px 0}.features{grid-template-columns:1fr}.cta-inner{padding:30px 23px}.footer-links{gap:30px}.footer-bottom{flex-direction:column;gap:8px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#" aria-label="Welfares.site home"><span class="brand-mark">✳</span> welfares.site</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#features">Features</a><a href="#how-it-works">How it works</a><a href="#about">Why Welfares</a>
+    </nav>
+    <div class="nav-actions"><a class="btn btn-light" href="#features">Explore platform</a><button class="btn btn-primary" data-open-modal>Get started <span>→</span></button></div>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow"><i></i> Welfare management, made simple</div>
+      <h1>Your community.<br><span>Better supported.</span></h1>
+      <p class="hero-copy">Create your own online welfare and cooperative platform. Bring members, contributions, loans, assistance and accountability together in one secure place.</p>
+      <div class="hero-actions"><button class="btn btn-primary" data-open-modal>Create your welfare site <span>→</span></button><a class="btn btn-outline" href="#how-it-works">See how it works</a></div>
+      <div class="trust"><div class="avatars"><span>CO</span><span>AS</span><span>UN</span><span>+</span></div><span>Built for cooperatives, associations and communities</span></div>
+    </div>
+    <div class="visual" aria-label="Illustration of a welfare management dashboard">
+      <div class="float-card float-one"><span class="float-icon">✓</span><strong>Contribution received</strong><small>Member payment recorded</small></div>
+      <div class="dashboard">
+        <div class="dash-top"><div><div class="dash-title">Community overview</div><div class="dash-sub">Your welfare at a glance</div></div><span class="pill">● Live overview</span></div>
+        <div class="metric-grid">
+          <div class="metric"><small>Total members</small><strong>248</strong></div>
+          <div class="metric"><small>Contributions</small><strong>₦4.8m</strong></div>
+          <div class="metric"><small>Active loans</small><strong>₦1.2m</strong></div>
+        </div>
+        <div class="chart"><div class="chart-label">Contribution activity</div><div class="bars"><i style="--h:34%"></i><i style="--h:55%"></i><i style="--h:43%"></i><i style="--h:72%"></i><i style="--h:60%"></i><i style="--h:88%"></i><i style="--h:76%"></i><i style="--h:100%"></i><i style="--h:83%"></i></div></div>
+        <div class="activity"><b>Monthly contributions</b><span>₦680,000 <span style="color:#3b8b5b">↑ 12%</span></span></div>
+        <div class="activity"><b>Pending assistance requests</b><span>08 requests</span></div>
+        <div class="activity"><b>Loan repayments received</b><span>₦245,000</span></div>
+      </div>
+      <div class="float-card float-two"><span class="float-icon">↗</span><strong>Reports ready</strong><small>Clear records. Better decisions.</small></div>
+    </div>
+  </div>
+</section>
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-head"><div class="kicker">One platform, every part of welfare</div><h2>Everything your group needs to stay organised</h2><p>Replace scattered spreadsheets, paper receipts and endless message threads with a connected workspace for your organisation.</p></div>
+    <div class="features">
+      <article class="feature"><div class="feature-icon">👥</div><h3>Member management</h3><p>Register members, manage profiles, track membership status and keep an up-to-date directory.</p></article>
+      <article class="feature"><div class="feature-icon">💚</div><h3>Contributions & savings</h3><p>Set contribution schedules, record payments, monitor balances and keep a clear transaction history.</p></article>
+      <article class="feature"><div class="feature-icon">🤝</div><h3>Loans & assistance</h3><p>Let members submit requests, review applications, approve support and track repayments or disbursements.</p></article>
+      <article class="feature"><div class="feature-icon">🧾</div><h3>Receipts & invoicing</h3><p>Generate receipts for recorded payments and issue invoices or payment notices to members.</p></article>
+      <article class="feature"><div class="feature-icon">🛍️</div><h3>Products & welfare benefits</h3><p>Publish items or benefits for members, manage requests and keep sales and payment records.</p></article>
+      <article class="feature"><div class="feature-icon">📊</div><h3>Reports & transparency</h3><p>Review collections, outstanding balances, loans, assistance and group activity with useful reports.</p></article>
+      <article class="feature"><div class="feature-icon">🔔</div><h3>Reminders & notifications</h3><p>Keep members informed with contribution reminders and important welfare announcements.</p></article>
+      <article class="feature"><div class="feature-icon">🔐</div><h3>Roles & permissions</h3><p>Give executives, treasurers, secretaries and members access appropriate to their responsibilities.</p></article>
+      <article class="feature"><div class="feature-icon">🌐</div><h3>Your own welfare site</h3><p>Give your organisation a dedicated online home where members can access its services and information.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section how" id="how-it-works">
+  <div class="container">
+    <div class="section-head"><div class="kicker">Get started in a few steps</div><h2>Your welfare site, your way</h2><p>Set up a dedicated space for your organisation without building software from scratch.</p></div>
+    <div class="steps">
+      <article class="step"><div class="step-no">01</div><h3>Create your site</h3><p>Choose your organisation name and set up its dedicated Welfares.site workspace.</p></article>
+      <article class="step"><div class="step-no">02</div><h3>Configure your welfare</h3><p>Add members, define contribution plans, set up loan rules and organise your welfare services.</p></article>
+      <article class="step"><div class="step-no">03</div><h3>Bring everyone together</h3><p>Invite members and administrators to manage activities and access the information they need.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section" id="about">
+  <div class="container split">
+    <div><div class="kicker">Designed around your community</div><h2>Less administration. More meaningful support.</h2><p>Welfares.site helps the people running your organisation spend less time chasing records and more time supporting members.</p>
+      <ul class="checks"><li>Keep contribution and payment records in one place.</li><li>Make welfare and loan requests easier to manage.</li><li>Improve visibility into group finances and activities.</li><li>Give members a convenient way to stay connected.</li></ul>
+      <button class="btn btn-primary" data-open-modal>Start building your site →</button>
+    </div>
+    <div class="quote-panel"><blockquote>“When everyone can see what is happening, it becomes easier to build trust, make decisions and take care of one another.”</blockquote><div class="by"><strong>Welfares.site</strong>A simpler way to manage collective welfare</div></div>
+  </div>
+</section>
+<section class="cta">
+  <div class="container"><div class="cta-inner"><div><h2>Ready to bring your welfare online?</h2><p>Create a dedicated digital space for your members and your organisation.</p></div><button class="btn" data-open-modal>Create your welfare site <span>→</span></button></div></div>
+</section>
+</main>
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand"><a class="brand" href="#"><span class="brand-mark">✳</span> welfares.site</a><p>A simple, organised way for cooperatives, associations and communities to manage welfare together.</p></div>
+      <div class="footer-links"><div><strong>Platform</strong><a href="#features">Features</a><a href="#how-it-works">How it works</a><a href="#about">About</a></div><div><strong>Get started</strong><a href="#" data-open-modal>Create a site</a><a href="mailto:hello@benevivo.org">Contact</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Welfares.site. All rights reserved.</span><span>Hosted by <a href="https://benevivo.org" target="_blank" rel="noopener">Benevivo.org</a></span></div>
+  </div>
+</footer>
+<div class="modal-backdrop" id="signupModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <button class="close" aria-label="Close" id="closeModal">×</button>
+    <h2 id="modalTitle">Create your welfare site</h2>
+    <p>Tell us a little about your organisation to get started.</p>
+    <form id="signupForm">
+      <div class="field"><label for="orgName">Organisation name</label><input id="orgName" name="orgName" placeholder="e.g. Unity Cooperative Society" required></div>
+      <div class="field"><label for="siteName">Preferred site name</label><input id="siteName" name="siteName" placeholder="e.g. unitycoop" required pattern="[a-zA-Z0-9-]+" title="Use letters, numbers or hyphens only"><small style="color:#7a8780">Your address will look like yourname.welfares.site</small></div>
+      <div class="field"><label for="email">Contact email</label><input id="email" name="email" type="email" placeholder="you@organisation.com" required></div>
+      <div class="field"><label for="orgType">Organisation type</label><select id="orgType" name="orgType" required><option value="">Select one</option><option>Cooperative society</option><option>Staff association</option><option>Community group</option><option>Union or professional body</option><option>Other</option></select></div>
+      <button class="btn btn-primary" type="submit">Submit interest →</button>
+      <p class="form-note" id="formMessage">This demo form does not submit data to a server.</p>
+    </form>
+  </div>
+</div>
+<script>
+const modal=document.getElementById('signupModal');
+const openModal=()=>{modal.classList.add('open');document.getElementById('orgName').focus()};
+const closeModal=()=>modal.classList.remove('open');
+document.querySelectorAll('[data-open-modal]').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();openModal()}));
+document.getElementById('closeModal').addEventListener('click',closeModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+document.getElementById('signupForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const name=document.getElementById('orgName').value.trim();
+  const site=document.getElementById('siteName').value.trim();
+  document.getElementById('formMessage').textContent=`Thanks! Your request for ${name} (${site}.welfares.site) is ready for backend integration.`;
+  document.getElementById('formMessage').style.color='#176b55';
+});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
