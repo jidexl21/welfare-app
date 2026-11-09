@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#153b35">
+<title>Profile & preferences — Welfares.site · Mockup</title>
+<link rel="stylesheet" href="assets/mockup.css">
+<link rel="stylesheet" href="assets/mockup-extras.css">
+</head>
+<body class="gated" data-portal="member">
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="member-dashboard.html"><span class="mark">✳</span><span>Welfares.site<small>MEMBER PORTAL</small></span></a>
+  <div class="org-switch"><span class="org-logo">UC</span><span><strong>Unity Cooperative</strong><small>Member portal</small></span><span style="margin-left:auto;color:#a8c0b3">⌄</span></div>
+  <div class="nav-label">My account</div><a class="nav-item" href="member-dashboard.html"><span class="ico">▦</span>Dashboard</a><a class="nav-item" href="member-statement.html"><span class="ico">₦</span>Statement</a><a class="nav-item" href="member-loans.html"><span class="ico">⇄</span>Loans</a><a class="nav-item" href="member-welfare.html"><span class="ico">♡</span>Welfare requests</a><a class="nav-item" href="member-receipts.html"><span class="ico">🧾</span>Receipts</a><div class="nav-label">Communication</div><a class="nav-item" href="member-announcements.html"><span class="ico">◉</span>Announcements</a><a class="nav-item active" href="member-profile.html"><span class="ico">♙</span>Profile & preferences</a>
+  <div class="side-bottom"><span class="avatar" data-avatar>AO</span><span><strong data-user-name>Abiola Ojo</strong><small>Member · UC-0241</small></span></div>
+  <a class="nav-item" href="#" data-signout style="margin-top:8px">⎋ &nbsp;Sign out</a>
+</aside>
+<div class="main">
+  <header class="topbar">
+    <div style="display:flex;align-items:center;gap:11px"><button class="icon-btn mobile-menu" id="menuBtn" aria-label="Menu">☰</button><div class="crumb">My account / <b>Profile & preferences</b></div></div>
+    <div class="topright"><span class="site-pill">● SITE ACTIVE</span><button class="icon-btn" data-toast="You have 3 items waiting for review." title="Notifications">♧</button><span class="avatar" style="width:32px;height:32px" data-avatar>AO</span></div>
+  </header>
+  <main class="content">
+    <div class="head"><div><h1>Profile & preferences</h1><p>Keep your contact details and notification choices up to date.</p></div><div class="actions"><button class="btn primary" data-toast="Profile saved (mockup).">Save changes</button></div></div>
+    <section class="columns equal">
+    <section class="panel "><div class="panel-head"><div><h2>Personal details</h2><p>Used on receipts and statements</p></div><div class="tools"></div></div><div class="form-grid"><div class="field full"><label for="pf-name">Full name</label><input id="pf-name" name="pf-name" type="text" placeholder="" value="Abiola Ojo"></div><div class="field"><label for="pf-email">Email</label><input id="pf-email" name="pf-email" type="email" placeholder="" value="abiola.ojo@example.com"></div><div class="field"><label for="pf-phone">Phone</label><input id="pf-phone" name="pf-phone" type="tel" placeholder="" value="+234 803 000 0000"></div><div class="field full"><label for="pf-addr">Address</label><input id="pf-addr" name="pf-addr" type="text" placeholder="" value="4 Bodija Estate, Ibadan"></div></div></section>
+    <section class="panel "><div class="panel-head"><div><h2>Notifications</h2><p>Choose how we reach you</p></div><div class="tools"></div></div><div class="toggle-row"><div>Payment receipts<small>Email after each payment</small></div><span class="switch on"></span></div><div class="toggle-row"><div>Reminders<small>Due dates and overdue balances</small></div><span class="switch on"></span></div><div class="toggle-row"><div>Loan updates<small>Status changes on your applications</small></div><span class="switch on"></span></div><div class="toggle-row"><div>WhatsApp<small>Available once connected</small></div><span class="switch"></span></div></section>
+  </section>
+  </main>
+</div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="assets/mockup.js"></script>
+</body>
+</html>

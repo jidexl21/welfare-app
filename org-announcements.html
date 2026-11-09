@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#153b35">
+<title>Announcements — Welfares.site · Mockup</title>
+<link rel="stylesheet" href="assets/mockup.css">
+<link rel="stylesheet" href="assets/mockup-extras.css">
+</head>
+<body class="gated" data-portal="org">
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="org-dashboard.html"><span class="mark">✳</span><span>Welfares.site<small>UNITY COOPERATIVE</small></span></a>
+  <div class="org-switch"><span class="org-logo">UC</span><span><strong>Unity Cooperative</strong><small>Organisation workspace</small></span><span style="margin-left:auto;color:#a8c0b3">⌄</span></div>
+  <div class="nav-label">Main menu</div><a class="nav-item" href="org-dashboard.html"><span class="ico">▦</span>Dashboard</a><a class="nav-item" href="org-members.html"><span class="ico">♙</span>Members <span class="count">248</span></a><a class="nav-item" href="org-contributions.html"><span class="ico">₦</span>Contributions</a><a class="nav-item" href="org-schemes.html"><span class="ico">▤</span>Contribution schemes</a><a class="nav-item" href="org-loans.html"><span class="ico">⇄</span>Loans <span class="count">8</span></a><a class="nav-item" href="org-welfare.html"><span class="ico">♡</span>Welfare requests <span class="count">5</span></a><a class="nav-item" href="org-products.html"><span class="ico">▣</span>Products & sales</a><a class="nav-item" href="org-payments.html"><span class="ico">▤</span>Payments & receipts</a><a class="nav-item" href="org-approvals.html"><span class="ico">✓</span>Approvals <span class="count">3</span></a><div class="nav-label">Insights & communication</div><a class="nav-item" href="org-reports.html"><span class="ico">▥</span>Reports</a><a class="nav-item active" href="org-announcements.html"><span class="ico">◉</span>Announcements</a><a class="nav-item" href="org-reminders.html"><span class="ico">♧</span>Reminders</a><div class="nav-label">Administration</div><a class="nav-item" href="org-profile.html"><span class="ico">▣</span>Organisation profile</a><a class="nav-item" href="org-roles.html"><span class="ico">♧</span>Roles & permissions</a><a class="nav-item" href="org-settings.html"><span class="ico">⚙</span>Organisation settings</a>
+  <div class="side-bottom"><span class="avatar" data-avatar>JA</span><span><strong data-user-name>Jide Admin</strong><small>Organisation administrator</small></span></div>
+  <a class="nav-item" href="#" data-signout style="margin-top:8px">⎋ &nbsp;Sign out</a>
+</aside>
+<div class="main">
+  <header class="topbar">
+    <div style="display:flex;align-items:center;gap:11px"><button class="icon-btn mobile-menu" id="menuBtn" aria-label="Menu">☰</button><div class="crumb">Unity Cooperative / <b>Announcements</b></div></div>
+    <div class="topright"><span class="site-pill">● SITE ACTIVE</span><button class="icon-btn" data-toast="You have 3 items waiting for review." title="Notifications">♧</button><span class="avatar" style="width:32px;height:32px" data-avatar>JA</span></div>
+  </header>
+  <main class="content">
+    <div class="head"><div><h1>Announcements</h1><p>Share important updates with members by portal, email or WhatsApp.</p></div><div class="actions"><button class="btn primary" data-open="m-ann">＋ Compose</button></div></div>
+    <div class="card-grid two">
+    <div class="plan-card"><div style="display:flex;justify-content:space-between;align-items:center"><h3>AGM date confirmed</h3><span class="status ">Published</span></div><p class="sub" style="margin:0">Saturday 14 December, 10:00 at the Unity hall.</p><div class="sub">Sent to all members · 248 recipients</div></div><div class="plan-card"><div style="display:flex;justify-content:space-between;align-items:center"><h3>November contribution reminder</h3><span class="status paid">Sent</span></div><p class="sub" style="margin:0">Please pay before 28 November to avoid a late charge.</p><div class="sub">Sent by email · 19 recipients</div></div>
+  </div>
+  </main>
+</div>
+</div>
+<div class="backdrop" id="m-ann" role="dialog" aria-modal="true" aria-labelledby="m-ann-t"><div class="modal"><button class="close" data-close aria-label="Close">×</button><h3 id="m-ann-t">Compose announcement</h3><p>Choose an audience and channels. Delivery is logged per member.</p><form data-success="Announcement published (mockup)."><div class="form-grid"><div class="field full"><label for="an-title">Title</label><input id="an-title" name="an-title" type="text" placeholder="e.g. AGM date confirmed" value=""></div><div class="field"><label for="an-aud">Audience</label><select id="an-aud" name="an-aud"><option>All members</option><option>Financial members</option><option>Executives</option><option>Loan holders</option></select></div><div class="field"><label for="an-ch">Channels</label><select id="an-ch" name="an-ch"><option>Member portal</option><option>Portal + email</option><option>Portal + email + WhatsApp (when enabled)</option></select></div><div class="field full"><label for="an-body">Message</label><textarea id="an-body" name="an-body" placeholder=""></textarea></div></div><div class="form-actions" style="margin-top:14px"><button class="btn primary" type="submit" style="width:100%;justify-content:center">Publish</button></div></form></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="assets/mockup.js"></script>
+</body>
+</html>

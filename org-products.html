@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#153b35">
+<title>Products & sales — Welfares.site · Mockup</title>
+<link rel="stylesheet" href="assets/mockup.css">
+<link rel="stylesheet" href="assets/mockup-extras.css">
+</head>
+<body class="gated" data-portal="org">
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="org-dashboard.html"><span class="mark">✳</span><span>Welfares.site<small>UNITY COOPERATIVE</small></span></a>
+  <div class="org-switch"><span class="org-logo">UC</span><span><strong>Unity Cooperative</strong><small>Organisation workspace</small></span><span style="margin-left:auto;color:#a8c0b3">⌄</span></div>
+  <div class="nav-label">Main menu</div><a class="nav-item" href="org-dashboard.html"><span class="ico">▦</span>Dashboard</a><a class="nav-item" href="org-members.html"><span class="ico">♙</span>Members <span class="count">248</span></a><a class="nav-item" href="org-contributions.html"><span class="ico">₦</span>Contributions</a><a class="nav-item" href="org-schemes.html"><span class="ico">▤</span>Contribution schemes</a><a class="nav-item" href="org-loans.html"><span class="ico">⇄</span>Loans <span class="count">8</span></a><a class="nav-item" href="org-welfare.html"><span class="ico">♡</span>Welfare requests <span class="count">5</span></a><a class="nav-item active" href="org-products.html"><span class="ico">▣</span>Products & sales</a><a class="nav-item" href="org-payments.html"><span class="ico">▤</span>Payments & receipts</a><a class="nav-item" href="org-approvals.html"><span class="ico">✓</span>Approvals <span class="count">3</span></a><div class="nav-label">Insights & communication</div><a class="nav-item" href="org-reports.html"><span class="ico">▥</span>Reports</a><a class="nav-item" href="org-announcements.html"><span class="ico">◉</span>Announcements</a><a class="nav-item" href="org-reminders.html"><span class="ico">♧</span>Reminders</a><div class="nav-label">Administration</div><a class="nav-item" href="org-profile.html"><span class="ico">▣</span>Organisation profile</a><a class="nav-item" href="org-roles.html"><span class="ico">♧</span>Roles & permissions</a><a class="nav-item" href="org-settings.html"><span class="ico">⚙</span>Organisation settings</a>
+  <div class="side-bottom"><span class="avatar" data-avatar>JA</span><span><strong data-user-name>Jide Admin</strong><small>Organisation administrator</small></span></div>
+  <a class="nav-item" href="#" data-signout style="margin-top:8px">⎋ &nbsp;Sign out</a>
+</aside>
+<div class="main">
+  <header class="topbar">
+    <div style="display:flex;align-items:center;gap:11px"><button class="icon-btn mobile-menu" id="menuBtn" aria-label="Menu">☰</button><div class="crumb">Unity Cooperative / <b>Products & sales</b></div></div>
+    <div class="topright"><span class="site-pill">● SITE ACTIVE</span><button class="icon-btn" data-toast="You have 3 items waiting for review." title="Notifications">♧</button><span class="avatar" style="width:32px;height:32px" data-avatar>JA</span></div>
+  </header>
+  <main class="content">
+    <div class="head"><div><h1>Products & sales</h1><p>Cooperative products, stock levels and member orders.</p></div><div class="actions"><button class="btn primary" data-toast="Product form opened (mockup).">＋ Add product</button></div></div>
+    <section class="stats"><article class="stat"><div class="stat-label">Products <span class="stat-icon">▣</span></div><strong>14</strong><span class="trend muted">3 low stock</span></article><article class="stat"><div class="stat-label">Sales (Nov) <span class="stat-icon">₦</span></div><strong>₦312,000</strong><span class="trend ">↑ 6.2%</span></article><article class="stat"><div class="stat-label">Open orders <span class="stat-icon">▤</span></div><strong>7</strong><span class="trend muted">Awaiting payment</span></article><article class="stat"><div class="stat-label">Stock value <span class="stat-icon">◇</span></div><strong>₦1.9m</strong><span class="trend ">At cost</span></article></section>
+  <section class="panel table-panel"><div class="panel-head" style="padding:16px 17px 0"><div><h2>Stock</h2><p>Products offered to members</p></div><div class="tools"></div></div><div class="table-scroll"><table id="prod-table"><thead><tr><th class="">Product</th><th class="">SKU</th><th class="num">Price</th><th class="num">In stock</th><th class="">Status</th></tr></thead><tbody><tr><td class="">Rice (50kg bag)</td><td class="">RCE-50</td><td class="num">₦68,000</td><td class="num">24</td><td class=""><span class="status paid">Active</span></td></tr><tr><td class="">Cooking oil (5L)</td><td class="">OIL-5</td><td class="num">₦9,500</td><td class="num">6</td><td class=""><span class="status pending">Pending</span></td></tr><tr><td class="">School uniform set</td><td class="">UNI-S1</td><td class="num">₦18,000</td><td class="num">0</td><td class=""><span class="status paid">Inactive</span></td></tr></tbody></table></div></section>
+  </main>
+</div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="assets/mockup.js"></script>
+</body>
+</html>

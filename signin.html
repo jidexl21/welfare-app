@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#153b35">
+<title>Sign in — Welfares.site · Mockup</title>
+<link rel="stylesheet" href="assets/mockup.css">
+<link rel="stylesheet" href="assets/mockup-extras.css">
+</head>
+<body>
+<header class="public-header">
+  <a class="brand" href="index.html"><span class="mark">✳</span><span>Welfares.site<small>WELFARE MANAGEMENT</small></span></a>
+  <nav class="public-nav">
+    <a href="index.html#features">Features</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a data-signin-link href="signin.html">Sign in</a>
+    <a class="btn lime" href="register.html">Register organisation</a>
+  </nav>
+</header>
+<main class="public-main">
+<div class="auth">
+  <div class="auth-side">
+    <span class="mark">✳</span>
+    <h2>One workspace per organisation.</h2>
+    <p>Sign in to the portal for your role. This mockup accepts any credentials, so every screen can be reviewed without a live account.</p>
+    <ul class="gap-list"><li>Benevivo super-admin console</li><li>Organisation administrator portal</li><li>Member self-service portal</li></ul>
+  </div>
+  <div class="auth-card">
+    <h1>Sign in</h1>
+    <p class="sub">Enter any email and password, or use a demo role below.</p>
+    <form data-signin style="margin-top:16px">
+      <div class="field full" style="margin-bottom:12px"><label for="email">Email</label><input id="email" name="email" type="email" value="jide@unitycoop.ng"></div>
+      <div class="field full" style="margin-bottom:12px"><label for="password">Password</label><input id="password" name="password" type="password" value="password"></div>
+      <div class="field full" style="margin-bottom:14px"><label for="portal">Portal</label><select id="portal" name="portal"><option value="org">Organisation administrator</option><option value="admin">Benevivo super-admin</option><option value="member">Member portal</option></select></div>
+      <button class="btn primary" type="submit" style="width:100%;justify-content:center">Sign in</button>
+    </form>
+    <div class="divider">Demo access</div>
+    <div class="role-grid">
+      <button class="role-btn" data-quick-role="admin" data-name="Benevivo Admin">Super-admin<small>Platform console</small></button>
+      <button class="role-btn" data-quick-role="org" data-name="Jide Admin">Org admin<small>Unity Cooperative</small></button>
+      <button class="role-btn" data-quick-role="member" data-name="Abiola Ojo">Member<small>Self-service</small></button>
+    </div>
+    <p class="sub-note">Forgot password and MFA are shown in the design only.</p>
+  </div>
+</div></main>
+<footer class="public-footer">© Benevivo.org · Welfares.site · Static mockup</footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="assets/mockup.js"></script>
+</body>
+</html>

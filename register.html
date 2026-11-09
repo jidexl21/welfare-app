@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#153b35">
+<title>Register organisation — Welfares.site · Mockup</title>
+<link rel="stylesheet" href="assets/mockup.css">
+<link rel="stylesheet" href="assets/mockup-extras.css">
+</head>
+<body>
+<header class="public-header">
+  <a class="brand" href="index.html"><span class="mark">✳</span><span>Welfares.site<small>WELFARE MANAGEMENT</small></span></a>
+  <nav class="public-nav">
+    <a href="index.html#features">Features</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a data-signin-link href="signin.html">Sign in</a>
+    <a class="btn lime" href="register.html">Register organisation</a>
+  </nav>
+</header>
+<main class="public-main">
+<div class="head"><div><h1>Register your organisation</h1><p>Create a welfare workspace on Welfares.site.</p></div></div>
+<section class="panel" style="max-width:760px">
+  <form data-success="Registration received. Check your email to verify the administrator account." data-go="signin.html">
+    <div class="form-grid">
+      <div class="field full"><label for="org">Organisation name</label><input id="org" name="org" type="text" placeholder="e.g. Unity Cooperative Society" value=""></div>
+      <div class="field"><label for="subdomain">Preferred subdomain</label><input id="subdomain" name="subdomain" type="text" placeholder="unitycoop" value=""></div>
+      <div class="field"><label for="org-type">Organisation type</label><select id="org-type" name="org-type"><option>Cooperative</option><option>Staff association</option><option>Union</option><option>Club</option><option>Other</option></select></div>
+      <div class="field"><label for="admin-name">Administrator full name</label><input id="admin-name" name="admin-name" type="text" placeholder="Full name" value=""></div>
+      <div class="field"><label for="admin-email">Administrator email</label><input id="admin-email" name="admin-email" type="email" placeholder="admin@example.com" value=""></div>
+      <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" placeholder="080…" value=""></div>
+      <div class="field"><label for="members">Expected members</label><select id="members" name="members"><option>1–150</option><option>151–750</option><option>751–2,500</option><option>2,500+</option></select></div>
+      <div class="field"><label for="plan">Plan</label><select id="plan" name="plan"><option>Starter</option><option>Growth</option><option>Professional</option><option>Enterprise</option></select></div>
+    </div>
+    <div class="checks" style="margin-top:14px"><label><input type="checkbox" required> I accept the terms and privacy notice</label></div>
+    <div class="form-actions"><button class="btn primary" type="submit">Create organisation</button><a href="signin.html">Already registered? Sign in</a></div>
+  </form>
+</section></main>
+<footer class="public-footer">© Benevivo.org · Welfares.site · Static mockup</footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="assets/mockup.js"></script>
+</body>
+</html>

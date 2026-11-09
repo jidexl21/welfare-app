@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#153b35">
+<title>Organisation profile — Welfares.site · Mockup</title>
+<link rel="stylesheet" href="assets/mockup.css">
+<link rel="stylesheet" href="assets/mockup-extras.css">
+</head>
+<body class="gated" data-portal="org">
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="org-dashboard.html"><span class="mark">✳</span><span>Welfares.site<small>UNITY COOPERATIVE</small></span></a>
+  <div class="org-switch"><span class="org-logo">UC</span><span><strong>Unity Cooperative</strong><small>Organisation workspace</small></span><span style="margin-left:auto;color:#a8c0b3">⌄</span></div>
+  <div class="nav-label">Main menu</div><a class="nav-item" href="org-dashboard.html"><span class="ico">▦</span>Dashboard</a><a class="nav-item" href="org-members.html"><span class="ico">♙</span>Members <span class="count">248</span></a><a class="nav-item" href="org-contributions.html"><span class="ico">₦</span>Contributions</a><a class="nav-item" href="org-schemes.html"><span class="ico">▤</span>Contribution schemes</a><a class="nav-item" href="org-loans.html"><span class="ico">⇄</span>Loans <span class="count">8</span></a><a class="nav-item" href="org-welfare.html"><span class="ico">♡</span>Welfare requests <span class="count">5</span></a><a class="nav-item" href="org-products.html"><span class="ico">▣</span>Products & sales</a><a class="nav-item" href="org-payments.html"><span class="ico">▤</span>Payments & receipts</a><a class="nav-item" href="org-approvals.html"><span class="ico">✓</span>Approvals <span class="count">3</span></a><div class="nav-label">Insights & communication</div><a class="nav-item" href="org-reports.html"><span class="ico">▥</span>Reports</a><a class="nav-item" href="org-announcements.html"><span class="ico">◉</span>Announcements</a><a class="nav-item" href="org-reminders.html"><span class="ico">♧</span>Reminders</a><div class="nav-label">Administration</div><a class="nav-item active" href="org-profile.html"><span class="ico">▣</span>Organisation profile</a><a class="nav-item" href="org-roles.html"><span class="ico">♧</span>Roles & permissions</a><a class="nav-item" href="org-settings.html"><span class="ico">⚙</span>Organisation settings</a>
+  <div class="side-bottom"><span class="avatar" data-avatar>JA</span><span><strong data-user-name>Jide Admin</strong><small>Organisation administrator</small></span></div>
+  <a class="nav-item" href="#" data-signout style="margin-top:8px">⎋ &nbsp;Sign out</a>
+</aside>
+<div class="main">
+  <header class="topbar">
+    <div style="display:flex;align-items:center;gap:11px"><button class="icon-btn mobile-menu" id="menuBtn" aria-label="Menu">☰</button><div class="crumb">Unity Cooperative / <b>Organisation profile</b></div></div>
+    <div class="topright"><span class="site-pill">● SITE ACTIVE</span><button class="icon-btn" data-toast="You have 3 items waiting for review." title="Notifications">♧</button><span class="avatar" style="width:32px;height:32px" data-avatar>JA</span></div>
+  </header>
+  <main class="content">
+    <div class="head"><div><h1>Organisation profile</h1><p>Public details and branding for your welfare workspace.</p></div><div class="actions"><button class="btn primary" data-toast="Profile saved (mockup).">Save changes</button></div></div>
+    <section class="columns equal">
+    <section class="panel "><div class="panel-head"><div><h2>Details</h2><p>Shown on receipts and statements</p></div><div class="tools"></div></div><div class="form-grid"><div class="field full"><label for="op-name">Organisation name</label><input id="op-name" name="op-name" type="text" placeholder="" value="Unity Cooperative Society"></div><div class="field"><label for="op-sub">Subdomain</label><input id="op-sub" name="op-sub" type="text" placeholder="" value="unitycoop.welfares.site"></div><div class="field"><label for="op-email">Contact email</label><input id="op-email" name="op-email" type="email" placeholder="" value="info@unitycoop.ng"></div><div class="field"><label for="op-phone">Phone</label><input id="op-phone" name="op-phone" type="tel" placeholder="" value="+234 801 000 0000"></div><div class="field full"><label for="op-addr">Address</label><input id="op-addr" name="op-addr" type="text" placeholder="" value="12 Market Road, Ibadan"></div></div></section>
+    <section class="panel "><div class="panel-head"><div><h2>Branding</h2><p>Colours and logo</p></div><div class="tools"></div></div><div class="kv"><dt>Primary colour</dt><dd><span class="swatch" style="background:#153b35;width:14px;height:14px"></span> #153b35</dd><dt>Accent colour</dt><dd><span class="swatch" style="background:#d8f36a;width:14px;height:14px"></span> #d8f36a</dd><dt>Logo</dt><dd>unity-logo.png <button class="link-btn" data-toast="Logo upload opened">Replace</button></dd></div></section>
+  </section>
+  </main>
+</div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="assets/mockup.js"></script>
+</body>
+</html>

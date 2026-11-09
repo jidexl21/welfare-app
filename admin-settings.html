@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#153b35">
+<title>Platform settings — Benevivo · Mockup</title>
+<link rel="stylesheet" href="assets/mockup.css">
+<link rel="stylesheet" href="assets/mockup-extras.css">
+</head>
+<body class="gated" data-portal="admin">
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="admin-dashboard.html"><span class="mark">✳</span><span>Benevivo<small>WELFARES PLATFORM</small></span></a>
+  
+  <div class="nav-label">Workspace</div><a class="nav-item" href="admin-dashboard.html"><span class="ico">▦</span>Overview</a><a class="nav-item" href="admin-organisations.html"><span class="ico">▣</span>Organisations <span class="count">24</span></a><a class="nav-item" href="admin-subscriptions.html"><span class="ico">◇</span>Subscriptions</a><a class="nav-item" href="admin-payments.html"><span class="ico">↗</span>Payments</a><div class="nav-label">Platform management</div><a class="nav-item" href="admin-plans.html"><span class="ico">▤</span>Plans & pricing</a><a class="nav-item" href="admin-administrators.html"><span class="ico">♙</span>Administrators</a><a class="nav-item" href="admin-reports.html"><span class="ico">▥</span>Reports</a><div class="nav-label">System</div><a class="nav-item active" href="admin-settings.html"><span class="ico">⚙</span>Platform settings</a><a class="nav-item" href="admin-audit.html"><span class="ico">☷</span>Audit log</a>
+  <div class="side-bottom"><span class="avatar" data-avatar>BA</span><span><strong data-user-name>Benevivo Admin</strong><small>Platform super admin</small></span></div>
+  <a class="nav-item" href="#" data-signout style="margin-top:8px">⎋ &nbsp;Sign out</a>
+</aside>
+<div class="main">
+  <header class="topbar">
+    <div style="display:flex;align-items:center;gap:11px"><button class="icon-btn mobile-menu" id="menuBtn" aria-label="Menu">☰</button><div class="crumb">Platform / <b>Platform settings</b></div></div>
+    <div class="topright"><span class="env">DEMO ENVIRONMENT</span><button class="icon-btn" data-toast="You have 3 items waiting for review." title="Notifications">♧</button><span class="avatar" style="width:32px;height:32px" data-avatar>BA</span></div>
+  </header>
+  <main class="content">
+    <div class="head"><div><h1>Platform settings</h1><p>Platform-wide configuration. Changes are audited.</p></div><div class="actions"><button class="btn primary" data-toast="Settings saved (mockup).">Save changes</button></div></div>
+    <section class="columns equal">
+    <section class="panel "><div class="panel-head"><div><h2>General</h2><p>Public information</p></div><div class="tools"></div></div><div class="form-grid"><div class="field"><label for="ps-name">Platform name</label><input id="ps-name" name="ps-name" type="text" placeholder="" value="Welfares.site"></div><div class="field"><label for="ps-support">Support email</label><input id="ps-support" name="ps-support" type="email" placeholder="" value="support@welfares.site"></div><div class="field"><label for="ps-cur">Default currency</label><select id="ps-cur" name="ps-cur"><option>NGN (₦)</option><option>USD ($)</option></select></div><div class="field"><label for="ps-tz">Time zone</label><select id="ps-tz" name="ps-tz"><option>Africa/Lagos (WAT)</option></select></div></div></section>
+    <section class="panel "><div class="panel-head"><div><h2>Access & security</h2><p>Platform-wide controls</p></div><div class="tools"></div></div><div class="toggle-row"><div>Require MFA for platform admins<small>Enforced for all Benevivo accounts</small></div><span class="switch on"></span></div><div class="toggle-row"><div>Allow new organisation signups<small>Turn off during maintenance</small></div><span class="switch on"></span></div><div class="toggle-row"><div>Maintenance mode<small>Shows a banner on tenant sites</small></div><span class="switch"></span></div></section>
+  </section>
+  </main>
+</div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="assets/mockup.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#153b35">
+<title>Roles & permissions — Welfares.site · Mockup</title>
+<link rel="stylesheet" href="assets/mockup.css">
+<link rel="stylesheet" href="assets/mockup-extras.css">
+</head>
+<body class="gated" data-portal="org">
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="org-dashboard.html"><span class="mark">✳</span><span>Welfares.site<small>UNITY COOPERATIVE</small></span></a>
+  <div class="org-switch"><span class="org-logo">UC</span><span><strong>Unity Cooperative</strong><small>Organisation workspace</small></span><span style="margin-left:auto;color:#a8c0b3">⌄</span></div>
+  <div class="nav-label">Main menu</div><a class="nav-item" href="org-dashboard.html"><span class="ico">▦</span>Dashboard</a><a class="nav-item" href="org-members.html"><span class="ico">♙</span>Members <span class="count">248</span></a><a class="nav-item" href="org-contributions.html"><span class="ico">₦</span>Contributions</a><a class="nav-item" href="org-schemes.html"><span class="ico">▤</span>Contribution schemes</a><a class="nav-item" href="org-loans.html"><span class="ico">⇄</span>Loans <span class="count">8</span></a><a class="nav-item" href="org-welfare.html"><span class="ico">♡</span>Welfare requests <span class="count">5</span></a><a class="nav-item" href="org-products.html"><span class="ico">▣</span>Products & sales</a><a class="nav-item" href="org-payments.html"><span class="ico">▤</span>Payments & receipts</a><a class="nav-item" href="org-approvals.html"><span class="ico">✓</span>Approvals <span class="count">3</span></a><div class="nav-label">Insights & communication</div><a class="nav-item" href="org-reports.html"><span class="ico">▥</span>Reports</a><a class="nav-item" href="org-announcements.html"><span class="ico">◉</span>Announcements</a><a class="nav-item" href="org-reminders.html"><span class="ico">♧</span>Reminders</a><div class="nav-label">Administration</div><a class="nav-item" href="org-profile.html"><span class="ico">▣</span>Organisation profile</a><a class="nav-item active" href="org-roles.html"><span class="ico">♧</span>Roles & permissions</a><a class="nav-item" href="org-settings.html"><span class="ico">⚙</span>Organisation settings</a>
+  <div class="side-bottom"><span class="avatar" data-avatar>JA</span><span><strong data-user-name>Jide Admin</strong><small>Organisation administrator</small></span></div>
+  <a class="nav-item" href="#" data-signout style="margin-top:8px">⎋ &nbsp;Sign out</a>
+</aside>
+<div class="main">
+  <header class="topbar">
+    <div style="display:flex;align-items:center;gap:11px"><button class="icon-btn mobile-menu" id="menuBtn" aria-label="Menu">☰</button><div class="crumb">Unity Cooperative / <b>Roles & permissions</b></div></div>
+    <div class="topright"><span class="site-pill">● SITE ACTIVE</span><button class="icon-btn" data-toast="You have 3 items waiting for review." title="Notifications">♧</button><span class="avatar" style="width:32px;height:32px" data-avatar>JA</span></div>
+  </header>
+  <main class="content">
+    <div class="head"><div><h1>Roles & permissions</h1><p>Control what administrators and staff can access. Sensitive actions are separately permissioned.</p></div><div class="actions"><button class="btn primary" data-toast="Role created (mockup).">＋ New role</button></div></div>
+    <section class="columns">
+    <section class="panel table-panel"><div class="panel-head" style="padding:16px 17px 0"><div><h2>Roles</h2><p>Members per role</p></div><div class="tools"></div></div><div class="table-scroll"><table id="role-table"><thead><tr><th class="">Role</th><th class="">Description</th><th class="num">Members</th></tr></thead><tbody><tr><td class="">Organisation owner</td><td class="">Settings and delegation</td><td class="num">1</td></tr><tr><td class="">Organisation administrator</td><td class="">Day-to-day operations</td><td class="num">3</td></tr><tr><td class="">Finance officer</td><td class="">Payments, reconciliation, receipts</td><td class="num">4</td></tr><tr><td class="">Loan officer</td><td class="">Loan review within authority</td><td class="num">2</td></tr><tr><td class="">Welfare officer</td><td class="">Welfare request review</td><td class="num">2</td></tr><tr><td class="">Auditor / read-only</td><td class="">View permitted records</td><td class="num">2</td></tr><tr><td class="">Member</td><td class="">Own records and requests</td><td class="num">236</td></tr></tbody></table></div></section>
+    <section class="panel "><div class="panel-head"><div><h2>Permission matrix</h2><p>Finance officer role</p></div><div class="tools"></div></div><div class="checks"><label><input type="checkbox" checked> View members</label><label><input type="checkbox" > Edit members</label><label><input type="checkbox" checked> Record payments</label><label><input type="checkbox" > Reverse payments</label><label><input type="checkbox" > Approve loans</label><label><input type="checkbox" > Disburse loans</label><label><input type="checkbox" > Decide welfare</label><label><input type="checkbox" checked> Export reports</label><label><input type="checkbox" > Manage roles</label><label><input type="checkbox" > Organisation settings</label></div><p class="sub-note">Reversals, approvals, disbursements and role changes need maker-checker approval.</p></section>
+  </section>
+  </main>
+</div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="assets/mockup.js"></script>
+</body>
+</html>

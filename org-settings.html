@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#153b35">
+<title>Organisation settings — Welfares.site · Mockup</title>
+<link rel="stylesheet" href="assets/mockup.css">
+<link rel="stylesheet" href="assets/mockup-extras.css">
+</head>
+<body class="gated" data-portal="org">
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="org-dashboard.html"><span class="mark">✳</span><span>Welfares.site<small>UNITY COOPERATIVE</small></span></a>
+  <div class="org-switch"><span class="org-logo">UC</span><span><strong>Unity Cooperative</strong><small>Organisation workspace</small></span><span style="margin-left:auto;color:#a8c0b3">⌄</span></div>
+  <div class="nav-label">Main menu</div><a class="nav-item" href="org-dashboard.html"><span class="ico">▦</span>Dashboard</a><a class="nav-item" href="org-members.html"><span class="ico">♙</span>Members <span class="count">248</span></a><a class="nav-item" href="org-contributions.html"><span class="ico">₦</span>Contributions</a><a class="nav-item" href="org-schemes.html"><span class="ico">▤</span>Contribution schemes</a><a class="nav-item" href="org-loans.html"><span class="ico">⇄</span>Loans <span class="count">8</span></a><a class="nav-item" href="org-welfare.html"><span class="ico">♡</span>Welfare requests <span class="count">5</span></a><a class="nav-item" href="org-products.html"><span class="ico">▣</span>Products & sales</a><a class="nav-item" href="org-payments.html"><span class="ico">▤</span>Payments & receipts</a><a class="nav-item" href="org-approvals.html"><span class="ico">✓</span>Approvals <span class="count">3</span></a><div class="nav-label">Insights & communication</div><a class="nav-item" href="org-reports.html"><span class="ico">▥</span>Reports</a><a class="nav-item" href="org-announcements.html"><span class="ico">◉</span>Announcements</a><a class="nav-item" href="org-reminders.html"><span class="ico">♧</span>Reminders</a><div class="nav-label">Administration</div><a class="nav-item" href="org-profile.html"><span class="ico">▣</span>Organisation profile</a><a class="nav-item" href="org-roles.html"><span class="ico">♧</span>Roles & permissions</a><a class="nav-item active" href="org-settings.html"><span class="ico">⚙</span>Organisation settings</a>
+  <div class="side-bottom"><span class="avatar" data-avatar>JA</span><span><strong data-user-name>Jide Admin</strong><small>Organisation administrator</small></span></div>
+  <a class="nav-item" href="#" data-signout style="margin-top:8px">⎋ &nbsp;Sign out</a>
+</aside>
+<div class="main">
+  <header class="topbar">
+    <div style="display:flex;align-items:center;gap:11px"><button class="icon-btn mobile-menu" id="menuBtn" aria-label="Menu">☰</button><div class="crumb">Unity Cooperative / <b>Organisation settings</b></div></div>
+    <div class="topright"><span class="site-pill">● SITE ACTIVE</span><button class="icon-btn" data-toast="You have 3 items waiting for review." title="Notifications">♧</button><span class="avatar" style="width:32px;height:32px" data-avatar>JA</span></div>
+  </header>
+  <main class="content">
+    <div class="head"><div><h1>Organisation settings</h1><p>Contribution cycle, receipts, notifications and defaults.</p></div><div class="actions"><button class="btn primary" data-toast="Settings saved (mockup).">Save changes</button></div></div>
+    <section class="columns equal">
+    <section class="panel "><div class="panel-head"><div><h2>Cycles & receipts</h2></div><div class="tools"></div></div><div class="form-grid"><div class="field"><label for="st-cycle">Contribution cycle</label><select id="st-cycle" name="st-cycle"><option>Monthly</option><option>Quarterly</option><option>Annually</option></select></div><div class="field"><label for="st-day">Due day of month</label><input id="st-day" name="st-day" type="number" placeholder="" value="28"></div><div class="field"><label for="st-prefix">Receipt prefix</label><input id="st-prefix" name="st-prefix" type="text" placeholder="" value="UC-RC-"></div><div class="field"><label for="st-cur">Currency</label><select id="st-cur" name="st-cur"><option>NGN (₦)</option></select></div></div></section>
+    <section class="panel "><div class="panel-head"><div><h2>Notifications</h2><p>Defaults for members</p></div><div class="tools"></div></div><div class="toggle-row"><div>Email receipts<small>Send a receipt after each payment</small></div><span class="switch on"></span></div><div class="toggle-row"><div>Overdue reminders<small>Send automatically after due date</small></div><span class="switch on"></span></div><div class="toggle-row"><div>WhatsApp messages<small>Available once the provider is connected</small></div><span class="switch"></span></div></section>
+  </section>
+  </main>
+</div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="assets/mockup.js"></script>
+</body>
+</html>

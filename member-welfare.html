@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#153b35">
+<title>Welfare requests — Welfares.site · Mockup</title>
+<link rel="stylesheet" href="assets/mockup.css">
+<link rel="stylesheet" href="assets/mockup-extras.css">
+</head>
+<body class="gated" data-portal="member">
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="member-dashboard.html"><span class="mark">✳</span><span>Welfares.site<small>MEMBER PORTAL</small></span></a>
+  <div class="org-switch"><span class="org-logo">UC</span><span><strong>Unity Cooperative</strong><small>Member portal</small></span><span style="margin-left:auto;color:#a8c0b3">⌄</span></div>
+  <div class="nav-label">My account</div><a class="nav-item" href="member-dashboard.html"><span class="ico">▦</span>Dashboard</a><a class="nav-item" href="member-statement.html"><span class="ico">₦</span>Statement</a><a class="nav-item" href="member-loans.html"><span class="ico">⇄</span>Loans</a><a class="nav-item active" href="member-welfare.html"><span class="ico">♡</span>Welfare requests</a><a class="nav-item" href="member-receipts.html"><span class="ico">🧾</span>Receipts</a><div class="nav-label">Communication</div><a class="nav-item" href="member-announcements.html"><span class="ico">◉</span>Announcements</a><a class="nav-item" href="member-profile.html"><span class="ico">♙</span>Profile & preferences</a>
+  <div class="side-bottom"><span class="avatar" data-avatar>AO</span><span><strong data-user-name>Abiola Ojo</strong><small>Member · UC-0241</small></span></div>
+  <a class="nav-item" href="#" data-signout style="margin-top:8px">⎋ &nbsp;Sign out</a>
+</aside>
+<div class="main">
+  <header class="topbar">
+    <div style="display:flex;align-items:center;gap:11px"><button class="icon-btn mobile-menu" id="menuBtn" aria-label="Menu">☰</button><div class="crumb">My account / <b>Welfare requests</b></div></div>
+    <div class="topright"><span class="site-pill">● SITE ACTIVE</span><button class="icon-btn" data-toast="You have 3 items waiting for review." title="Notifications">♧</button><span class="avatar" style="width:32px;height:32px" data-avatar>AO</span></div>
+  </header>
+  <main class="content">
+    <div class="head"><div><h1>Welfare requests</h1><p>Submit a request and track its progress.</p></div><div class="actions"><button class="btn primary" data-open="m-welfare">＋ New request</button></div></div>
+    <section class="panel table-panel"><div class="panel-head" style="padding:16px 17px 0"><div><h2>My requests</h2></div><div class="tools"></div></div><div class="table-scroll"><table id="mw-table"><thead><tr><th class="">Reference</th><th class="">Category</th><th class="num">Amount</th><th class="">Submitted</th><th class="">Status</th></tr></thead><tbody><tr><td class="">WR-0412</td><td class="">Bereavement</td><td class="num">₦50,000</td><td class="">06 Nov 2026</td><td class=""><span class="status pending">Pending</span></td></tr><tr><td class="">WR-0377</td><td class="">Medical</td><td class="num">₦30,000</td><td class="">14 Jul 2026</td><td class=""><span class="status paid">Approved</span></td></tr></tbody></table></div></section>
+  </main>
+</div>
+</div>
+<div class="backdrop" id="m-welfare" role="dialog" aria-modal="true" aria-labelledby="m-welfare-t"><div class="modal"><button class="close" data-close aria-label="Close">×</button><h3 id="m-welfare-t">Welfare request</h3><p>Describe your request. Attach supporting documents where needed.</p><form data-success="Welfare request submitted (mockup)."><div class="form-grid"><div class="field"><label for="wf-cat">Category</label><select id="wf-cat" name="wf-cat"><option>Bereavement</option><option>Medical</option><option>Education</option><option>Emergency</option></select></div><div class="field"><label for="wf-amt">Amount requested (₦)</label><input id="wf-amt" name="wf-amt" type="number" placeholder="e.g. 50000" value=""></div><div class="field full"><label for="wf-desc">Details</label><textarea id="wf-desc" name="wf-desc" placeholder=""></textarea></div><div class="field full"><label for="wf-file">Supporting documents</label><input id="wf-file" type="file" multiple></div></div><div class="form-actions" style="margin-top:14px"><button class="btn primary" type="submit" style="width:100%;justify-content:center">Submit request</button></div></form></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="assets/mockup.js"></script>
+</body>
+</html>

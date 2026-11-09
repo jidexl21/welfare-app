@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#153b35">
+<title>Approvals — Welfares.site · Mockup</title>
+<link rel="stylesheet" href="assets/mockup.css">
+<link rel="stylesheet" href="assets/mockup-extras.css">
+</head>
+<body class="gated" data-portal="org">
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="org-dashboard.html"><span class="mark">✳</span><span>Welfares.site<small>UNITY COOPERATIVE</small></span></a>
+  <div class="org-switch"><span class="org-logo">UC</span><span><strong>Unity Cooperative</strong><small>Organisation workspace</small></span><span style="margin-left:auto;color:#a8c0b3">⌄</span></div>
+  <div class="nav-label">Main menu</div><a class="nav-item" href="org-dashboard.html"><span class="ico">▦</span>Dashboard</a><a class="nav-item" href="org-members.html"><span class="ico">♙</span>Members <span class="count">248</span></a><a class="nav-item" href="org-contributions.html"><span class="ico">₦</span>Contributions</a><a class="nav-item" href="org-schemes.html"><span class="ico">▤</span>Contribution schemes</a><a class="nav-item" href="org-loans.html"><span class="ico">⇄</span>Loans <span class="count">8</span></a><a class="nav-item" href="org-welfare.html"><span class="ico">♡</span>Welfare requests <span class="count">5</span></a><a class="nav-item" href="org-products.html"><span class="ico">▣</span>Products & sales</a><a class="nav-item" href="org-payments.html"><span class="ico">▤</span>Payments & receipts</a><a class="nav-item active" href="org-approvals.html"><span class="ico">✓</span>Approvals <span class="count">3</span></a><div class="nav-label">Insights & communication</div><a class="nav-item" href="org-reports.html"><span class="ico">▥</span>Reports</a><a class="nav-item" href="org-announcements.html"><span class="ico">◉</span>Announcements</a><a class="nav-item" href="org-reminders.html"><span class="ico">♧</span>Reminders</a><div class="nav-label">Administration</div><a class="nav-item" href="org-profile.html"><span class="ico">▣</span>Organisation profile</a><a class="nav-item" href="org-roles.html"><span class="ico">♧</span>Roles & permissions</a><a class="nav-item" href="org-settings.html"><span class="ico">⚙</span>Organisation settings</a>
+  <div class="side-bottom"><span class="avatar" data-avatar>JA</span><span><strong data-user-name>Jide Admin</strong><small>Organisation administrator</small></span></div>
+  <a class="nav-item" href="#" data-signout style="margin-top:8px">⎋ &nbsp;Sign out</a>
+</aside>
+<div class="main">
+  <header class="topbar">
+    <div style="display:flex;align-items:center;gap:11px"><button class="icon-btn mobile-menu" id="menuBtn" aria-label="Menu">☰</button><div class="crumb">Unity Cooperative / <b>Approvals</b></div></div>
+    <div class="topright"><span class="site-pill">● SITE ACTIVE</span><button class="icon-btn" data-toast="You have 3 items waiting for review." title="Notifications">♧</button><span class="avatar" style="width:32px;height:32px" data-avatar>JA</span></div>
+  </header>
+  <main class="content">
+    <div class="head"><div><h1>Approvals</h1><p>Items waiting for your decision at your approval level.</p></div><div class="actions"><input class="search" data-filter="appr-table" placeholder="Search request or member…"></div></div>
+    <section class="panel table-panel"><div class="panel-head" style="padding:16px 17px 0"><div><h2>Pending approvals</h2><p>Maker-checker applies to disbursements and reversals</p></div><div class="tools"></div></div><div class="table-scroll"><table id="appr-table"><thead><tr><th class="">Request</th><th class="">Type</th><th class="">Member</th><th class="num">Amount</th><th class="">Submitted by</th><th class="">Level</th><th class=""></th></tr></thead><tbody><tr><td class="">LA-2041</td><td class="">Loan application</td><td class=""><div class="member" style="display:flex;align-items:center;gap:8px"><span class="member-avatar" style="width:27px;height:27px;border-radius:9px;background:#edf4e8;color:#477452;display:grid;place-items:center;font-size:9px;font-weight:850">TK</span><span><strong>Tunde Kayode</strong><div class="sub">UC-0198</div></span></div></td><td class="num">₦150,000</td><td class="">Loan officer · Kemi</td><td class="">Committee 2 of 2</td><td class=""><button class="btn lime" data-row-action="Approved LA-2041" data-remove>Approve</button> <button class="btn secondary" data-row-action="Rejected LA-2041" data-remove>Reject</button></td></tr><tr><td class="">WR-0412</td><td class="">Welfare request</td><td class=""><div class="member" style="display:flex;align-items:center;gap:8px"><span class="member-avatar" style="width:27px;height:27px;border-radius:9px;background:#edf4e8;color:#477452;display:grid;place-items:center;font-size:9px;font-weight:850">EN</span><span><strong>Emeka Nwosu</strong><div class="sub">UC-0249</div></span></div></td><td class="num">₦50,000</td><td class="">Welfare officer · Tayo</td><td class="">Officer 1 of 1</td><td class=""><button class="btn lime" data-row-action="Approved WR-0412" data-remove>Approve</button> <button class="btn secondary" data-row-action="Rejected WR-0412" data-remove>Reject</button></td></tr><tr><td class="">REV-0032</td><td class="">Payment reversal</td><td class=""><div class="member" style="display:flex;align-items:center;gap:8px"><span class="member-avatar" style="width:27px;height:27px;border-radius:9px;background:#edf4e8;color:#477452;display:grid;place-items:center;font-size:9px;font-weight:850">CE</span><span><strong>Chika Eze</strong><div class="sub">UC-0207</div></span></div></td><td class="num">₦50,000</td><td class="">Finance · Ada</td><td class="">Finance lead</td><td class=""><button class="btn lime" data-row-action="Reversal REV-0032 approved" data-remove>Approve</button> <button class="btn secondary" data-row-action="Reversal REV-0032 rejected" data-remove>Reject</button></td></tr></tbody></table></div></section>
+  </main>
+</div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="assets/mockup.js"></script>
+</body>
+</html>

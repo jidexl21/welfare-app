@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#153b35">
+<title>Administrators — Benevivo · Mockup</title>
+<link rel="stylesheet" href="assets/mockup.css">
+<link rel="stylesheet" href="assets/mockup-extras.css">
+</head>
+<body class="gated" data-portal="admin">
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="admin-dashboard.html"><span class="mark">✳</span><span>Benevivo<small>WELFARES PLATFORM</small></span></a>
+  
+  <div class="nav-label">Workspace</div><a class="nav-item" href="admin-dashboard.html"><span class="ico">▦</span>Overview</a><a class="nav-item" href="admin-organisations.html"><span class="ico">▣</span>Organisations <span class="count">24</span></a><a class="nav-item" href="admin-subscriptions.html"><span class="ico">◇</span>Subscriptions</a><a class="nav-item" href="admin-payments.html"><span class="ico">↗</span>Payments</a><div class="nav-label">Platform management</div><a class="nav-item" href="admin-plans.html"><span class="ico">▤</span>Plans & pricing</a><a class="nav-item active" href="admin-administrators.html"><span class="ico">♙</span>Administrators</a><a class="nav-item" href="admin-reports.html"><span class="ico">▥</span>Reports</a><div class="nav-label">System</div><a class="nav-item" href="admin-settings.html"><span class="ico">⚙</span>Platform settings</a><a class="nav-item" href="admin-audit.html"><span class="ico">☷</span>Audit log</a>
+  <div class="side-bottom"><span class="avatar" data-avatar>BA</span><span><strong data-user-name>Benevivo Admin</strong><small>Platform super admin</small></span></div>
+  <a class="nav-item" href="#" data-signout style="margin-top:8px">⎋ &nbsp;Sign out</a>
+</aside>
+<div class="main">
+  <header class="topbar">
+    <div style="display:flex;align-items:center;gap:11px"><button class="icon-btn mobile-menu" id="menuBtn" aria-label="Menu">☰</button><div class="crumb">Platform / <b>Administrators</b></div></div>
+    <div class="topright"><span class="env">DEMO ENVIRONMENT</span><button class="icon-btn" data-toast="You have 3 items waiting for review." title="Notifications">♧</button><span class="avatar" style="width:32px;height:32px" data-avatar>BA</span></div>
+  </header>
+  <main class="content">
+    <div class="head"><div><h1>Administrators</h1><p>Benevivo platform users, roles and privileged support access.</p></div><div class="actions"><button class="btn primary" data-open="m-admin">＋ Invite administrator</button></div></div>
+    <section class="panel table-panel"><div class="panel-head" style="padding:16px 17px 0"><div><h2>Platform users</h2><p>Access is reviewed each quarter</p></div><div class="tools"><input class="search" data-filter="adm-table" placeholder="Search…"></div></div><div class="table-scroll"><table id="adm-table"><thead><tr><th class="">Administrator</th><th class="">Role</th><th class="">MFA</th><th class="">Last sign-in</th><th class="">Status</th><th class=""></th></tr></thead><tbody><tr><td class=""><div class="member" style="display:flex;align-items:center;gap:8px"><span class="member-avatar" style="width:27px;height:27px;border-radius:9px;background:#edf4e8;color:#477452;display:grid;place-items:center;font-size:9px;font-weight:850">BA</span><span><strong>Benevivo Admin</strong><div class="sub">admin@benevivo.org</div></span></div></td><td class="">Super-admin</td><td class=""><span class="status paid">Enabled</span></td><td class="">Today, 09:14</td><td class=""><span class="status paid">Active</span></td><td class=""><button class="btn secondary" data-toast="Role editor opened">Edit</button></td></tr><tr><td class=""><div class="member" style="display:flex;align-items:center;gap:8px"><span class="member-avatar" style="width:27px;height:27px;border-radius:9px;background:#edf4e8;color:#477452;display:grid;place-items:center;font-size:9px;font-weight:850">RA</span><span><strong>Ruth Adeyemi</strong><div class="sub">ruth@benevivo.org</div></span></div></td><td class="">Support (audited)</td><td class=""><span class="status paid">Enabled</span></td><td class="">Yesterday</td><td class=""><span class="status paid">Active</span></td><td class=""><button class="btn secondary" data-toast="Access review started">Review</button></td></tr><tr><td class=""><div class="member" style="display:flex;align-items:center;gap:8px"><span class="member-avatar" style="width:27px;height:27px;border-radius:9px;background:#edf4e8;color:#477452;display:grid;place-items:center;font-size:9px;font-weight:850">SO</span><span><strong>Samuel Okoro</strong><div class="sub">samuel@benevivo.org</div></span></div></td><td class="">Read-only auditor</td><td class=""><span class="status pending">Pending</span></td><td class="">—</td><td class=""><span class="status pending">Pending</span></td><td class=""><button class="btn secondary" data-toast="Invitation resent">Resend</button></td></tr></tbody></table></div></section>
+  </main>
+</div>
+</div>
+<div class="backdrop" id="m-admin" role="dialog" aria-modal="true" aria-labelledby="m-admin-t"><div class="modal"><button class="close" data-close aria-label="Close">×</button><h3 id="m-admin-t">Invite administrator</h3><p>An invitation email is sent. MFA is required for platform administrators.</p><form data-success="Invitation sent (mockup)."><div class="form-grid"><div class="field full"><label for="a-name">Full name</label><input id="a-name" name="a-name" type="text" placeholder="Full name" value=""></div><div class="field full"><label for="a-email">Work email</label><input id="a-email" name="a-email" type="email" placeholder="name@benevivo.org" value=""></div><div class="field"><label for="a-role">Role</label><select id="a-role" name="a-role"><option>Platform super-admin</option><option>Platform support (audited)</option><option>Read-only auditor</option></select></div></div><div class="form-actions" style="margin-top:14px"><button class="btn primary" type="submit" style="width:100%;justify-content:center">Send invitation</button></div></form></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="assets/mockup.js"></script>
+</body>
+</html>
